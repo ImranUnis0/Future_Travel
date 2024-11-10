@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="myDigitalClock">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Date Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="window">
+        <div class="window-header">
+            <div class="title">Future Date Tracker</div>
+            <div class="window-controls">
+                <button id="minimize">−</button>
+                <button id="close">×</button>
+                <button id="resize">▢</button>
+            </div>
+        </div>
+
+        <div ng-controller="ClockCtrl" class="container text-center window-content">
+            <h1 class="my-4">Chrono Planner</h1>
+            <div class="clock-display">
+                <div class="time">{{timeStamp()}}</div>
+            </div>
+
+            <div class="input-group my-3">
+                <input type="text" class="form-control" placeholder="Days to Add" id="DaysToAdd" />
+            </div>
+
+            <div class="button-group mb-3">
+                <button class="btn btn-primary" ng-click="futDate()">Next Day</button>
+                <button class="btn btn-danger" ng-click="pastDate()">Previous Day</button>
+                <button class="btn btn-success" ng-click="futWeek()">Next Week</button>
+                <button class="btn btn-warning" ng-click="pastWeek()">Previous Week</button>
+            </div>
+
+            <div class="result">
+                <input type="text" class="form-control" placeholder="Result" id="display" disabled />
+            </div>
+
+            <footer class="mt-5">
+                <h3>Memories may fade, but we’ll keep track for you!</h3>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
