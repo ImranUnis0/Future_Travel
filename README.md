@@ -24,3 +24,8 @@ Flexible Planner for Any Task:
 
 Planner for Everyone: This app is perfect for anyone who wants to organize or track tasks in their field, whether you're a doctor, student, teacher, business professional, or anyone else needing an easy way to plan activities and manage tasks effectively.
 Built on AngularJS, this project combines simplicity with powerful functionality, offering a unique approach to time and date management. Future Travel provides a user-friendly, engaging experience for all time-related planning and tracking needs.
+
+Author
+Developed by Imran Unis.
+[https://www.linkedin.com/in/](https://www.linkedin.com/in/imran-younus-031283111/)
+
